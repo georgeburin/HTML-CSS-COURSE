@@ -1,0 +1,118 @@
+
+
+.thumbnail {
+  /*font-size: 30px;       height: 600px;       */
+  width: 100%;
+  /* display: block;   /* IT IS A BLOCK ELEMENT. IT TAKES THE ENTIRE LINE* 
+  not needed because width:100% takes the entire space of the container which is div/
+  /*  height: 300px;     specify the width only so the image doesnt stretch
+  object-fit: cover;         image is 300x300px and it is not stretched, but its not
+  minimized either  
+  object-fit: contain;  This is what makes the image shrink to the specified size 300x300px. 
+  object-position: contain;    object-position: right; shows the right of the image 
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;    */
+}
+
+.video-title { 
+  margin-top: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 10px;
+  /* width: 300px;  paragraphs p by default take the entire row. There are 3 types of objects:
+   block element, inline-block element, inline element(<strong></strong>)*/
+}
+.video-author,
+.video-stats{
+  /* display: inline-block;  INLINE-BLOCK-ELEMENT (take as much space as needed. but no the entire line)  */
+  display: block; /* Is block by default, this code not needed*/
+}
+/*.video-preview {
+  /*width: 300px;
+  display: inline-block; 
+  /*vertical-align: top;   two div's are not vertically aligned one bigger than other. Do the vertical-align: top 
+  we are not doing this because we are using grid now
+  margin-right: 15px; even margin not needed because there is a way to control spacing in grid 
+}*/
+.video-info-grid{
+  display: grid;
+  grid-template-columns: 50px 1fr;
+}
+/*.channel-picture {
+  display: inline-block;
+  width: 50px;
+  vertical-align: top;
+  background-color: gray;
+}
+.video-info{
+  display: inline-block;
+  width:200px;
+  background-color: gray;
+}*/
+.profile-picture {
+  width: 100%;
+  border-radius: 50px;
+  width: 36px;
+}
+.thumbnail-row {
+  margin-bottom: 8px;
+  position: relative;
+}
+.video-author {
+  font-size: 12px;
+  color: rgb(96,96,96);
+  margin-bottom: 4px;
+}
+.video-stats {
+  font-size: 12px;
+  color: rgb(96,96,96);
+}
+.video-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 15px;
+  row-gap: 40px;
+
+}
+
+/* Inheritance: text-decoration and other text related things are inherited */
+
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/*this means that below 750px there is going to be two columns in our grid*/
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr ;
+  }
+}
+/* This media quirey takes care of middle size screens from 751px to 999px */
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+/* min-width: 1000px means that if 1000px and more then there is going to be 4 columns in our grid 
+This is RESPONSIVE DESIGN */
+
+
+.video-time {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}
+/*if you want to put something inside the other element with the precise location then do position relative on the outer element and position absolute on the inner element*/
+
+/* padding: top bottom left right;     You can write padding on a single line. Same for margin  */

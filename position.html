@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Position Practice</title>
+
+  </head>
+  <body style="
+   height:3000px;
+   padding-top: 60px;
+   padding-left:80px;
+   ">
+    <div style="
+      background-color: black;
+      color: white;
+      position:fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      height: 50px;
+      z-index: 1;
+    ">header</div>
+    <!--position: fixed; object is above all elements in the page and will stay there even if you scroll-->
+    <!--top: 10px; means element is 10px from the top of the page, also bottom, right, left. 
+    it works like margin-->
+    <!--it is a bad practive to do margin when dealing with position: fixed headers-->
+
+    <div style="
+      background-color: green;
+      color: white;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      top: 50px;
+      width: 72px;
+    ">
+      sidebar
+      <div style="
+        position: absolute;
+        background-color: red;
+        color: white;
+        right: 0;
+        top: 0;
+        z-index: 2;
+      ">
+        x
+      </div> 
+      <!--position absolute is placed inside the position fixed element. then it is soing to be relative to the position fixed element, not the page -->
+  
+    </div>
+      <!--width:72px; is because we dont want it to resize with shrinking of browser-->
+
+    <div style="
+     position: absolute;
+     background-color: red;
+     color: white;
+     right: 10px;
+     top: 60px;
+     z-index: 2;
+    ">
+      absolute
+    </div>  
+     <!--position: fixed;  dont change when we scroll. this positioning is browser window-->
+     <!--position: absolute;  positions element on the page which does move when we scroll-->
+     <!--z-index: 0;  if z-index is high then this element will appear on top of the elements with the lower z-index-->
+
+    <div style="
+      background-color: lightblue;
+      height:200px;
+      width: 200px;
+      position: static;
+    ">
+      div1
+    </div>
+      <!--position: static; is default-->
+
+    <div style="
+      background-color: lightpink;
+      height:200px;
+      width: 200px;
+      position: relative
+    ;">
+      div2
+      <div style="
+        position: absolute;
+        background-color: black;
+        color: white;
+        bottom:10px;
+        right: 10px;
+        z-index: 2;
+      ">
+        5:00
+      </div>  
+      <!--if you put an element that is position: absolute; inside the element that is position: relative, then the absolute element would be placed relative to the position-relative element, not relative to the page-->
+    </div>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FLEXBOX Practice</title>
+  </head>
+  <body style="padding-bottom:1000px;"><!--flexbox - take as much space as you need. similar to grid-->
+    <div style="   
+      display:flex;
+      flex-direction: row
+      ">
+      <div style="background-color: lightblue; ">div1 </div>
+      <div style="background-color: lightpink; ">div2 <p>text</p></div>
+    </div>
+
+    <div style="  
+      margin-top:30px; 
+      display:flex;
+      flex-direction: row
+      ">
+      <div style="
+      background-color: lightblue; 
+      width:100px;
+      ">100px</div>
+      <div style="background-color: lightpink; 
+      flex: 1">flex 1</div> <!--flex: 1 is equivalent to 1fr. Take up the entire free space-->
+    </div>
+
+    <div style="  
+      margin-top:30px; 
+      display:flex;
+      flex-direction: row
+      ">
+      <div style="
+      background-color: lightblue; 
+      width:100px;
+      ">100px</div>
+      <div style="background-color: lightpink; 
+      flex: 1">flex 1</div> <!--flex: 1 is equivalent to 1fr. Take up the entire free space-->
+      <div style="background-color: lightblue; 
+      flex: 2">flex 2</div> <!--flex: 2 is equivalent to 2fr. 
+      Take up the 2/3 of free space because the other element is taking 1 free space-->
+    </div>
+
+    <div style="  
+      margin-top:30px; 
+      display:flex;
+      flex-direction: row;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content: center;    
+      ">
+      <!--Justify content changes how elements are laid out horizontally -->
+      <div style="
+      background-color: lightblue; 
+      width:100px;">
+      100px</div>
+      <div style="
+      background-color: lightpink; 
+      width: 100px">
+      100px</div> <!--flex: 1 is equivalent to 1fr. Take up the entire free space-->
+      <div style="
+      background-color: lightblue; 
+      width: 100px">
+      100px</div> <!--flex: 2 is equivalent to 2fr. 
+      Take up the 2/3 of free space because the other element is taking 1 free space-->
+    </div>
+
+    <div style="  
+      margin-top:30px; 
+      display:flex;
+      flex-direction: row;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content: space-between;    
+      ">
+      <!--JUSTIFY CONTENT: SPACE-BETWEEN changes how elements are laid out horizontally
+      space-between makes them be spread from each other as far as possible -->
+      <div style="
+      background-color: lightblue; 
+      width:100px;">
+      100px</div>
+      <div style="
+      background-color: lightpink; 
+      width: 100px">
+      100px</div> <!--flex: 1 is equivalent to 1fr. Take up the entire free space-->
+      <div style="
+      background-color: lightblue; 
+      width: 100px">
+      100px</div> <!--flex: 2 is equivalent to 2fr. 
+      Take up the 2/3 of free space because the other element is taking 1 free space-->
+    </div>
+
+    <div style="  
+      margin-top:30px; 
+      display:flex;
+      flex-direction: row;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      border-color: gray;
+      justify-content: space-between;  
+      align-items: center;  
+      ">
+      <!--align-items changes how elements are laid out vertically, can be stretched,start,end,center -->
+      <div style="
+      background-color: lightblue; 
+      width:100px;">
+      100px</div>
+      <div style="
+      background-color: lightpink; 
+      width: 100px">
+      100px</div> <!--flex: 1 is equivalent to 1fr. Take up the entire free space-->
+      <div style="
+      background-color: lightblue; 
+      width: 100px">
+      100px</div> <!--flex: 2 is equivalent to 2fr. 
+      Take up the 2/3 of free space because the other element is taking 1 free space-->
+    </div>
+  </body>
+</html>

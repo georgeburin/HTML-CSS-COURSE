@@ -1,0 +1,36 @@
+.sidebar{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  top: 55px;
+
+  background-color: white;
+  width: 72px;
+  z-index: 200;
+  padding-top: 5px;
+}
+
+.sidebar-link {
+  height: 74px;
+  display: flex;
+  justify-content: center; /*centers content HORIZONTALLY when flex-direction: row*/
+  align-items: center; /*centers content VERTICALLY in a flexbox when flex-direction: row*/
+  flex-direction: column; /*display elements VERTICALLY in a flexbox. This just reverses align-items and justify-content*/
+  cursor: pointer;
+}
+
+.sidebar-link:hover{
+  background-color: rgb(235,235,235);
+}
+
+.sidebar-link img {
+  height: 24px;
+  margin-bottom: 4px;
+}
+/* when we have .sidebar-link img this means that we target all images inside the sidebar-link class. We are not targeting all of the images on the page*/
+
+.sidebar-link div {
+  font-size: 10px;
+
+}
+/* In this case we are targeting all div inside the sidebar-link */

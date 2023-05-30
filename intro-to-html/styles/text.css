@@ -1,0 +1,62 @@
+p {  /* this is a selector.*/
+    font-family: Roboto;
+    margin-top:0;
+    margin-bottom: 0;
+}
+
+.video-title {   /* this is a selector for a class. 
+    This is more specific than just p {} paragraph.
+    THE MORE SPECIFIC SELECTOR GETS THE HIGHEST PRIORITY*/
+    font-size: 18px;
+    font-weight: bold;
+    /*   font-style: italic;     makes the text italic*/
+    /*   text-align: center;     aligns text in the class*/
+    width: 300px;
+    line-height: 24px; /*this is space between the lines*/
+    margin-bottom: 5px;
+}
+.video-stats {
+    /* font-family: Arial;    all paragraphs are already targeted by arial*/
+    font-size: 14px;
+    color: rgb(96, 96, 96);  /* inspect -> select element -> 
+    computed*/
+    /* margin-top: 0;    all paragraphs are already targeted by margin: 0   */
+    margin-bottom: 20px;
+}
+.video-author {
+    color:rgb(96, 96, 96);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.video-description{
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+    width: 280px;
+    line-height: 22px; /*this is space between the lines*/
+    margin-bottom: 100px;
+}
+/*paragraphs have some margin already*/
+.apple-text {
+    margin-bottom: 50px;
+    font-size: 14px;
+    background-color: red;
+    padding: 18px;
+    color: white;
+    text-align: center;
+    
+}
+.span-example {
+    color: red;
+    margin-left: 12px;
+    cursor: pointer;
+}
+
+.span-example:hover {
+    text-decoration: underline;
+}
+.shop-link {
+    cursor: pointer;
+}
+.shop-link:hover {
+    text-decoration: underline;
+}
